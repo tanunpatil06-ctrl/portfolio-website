@@ -1,0 +1,187 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0f19;
+    color: #e6edf3;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(11,15,25,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1f2937;
+    z-index: 1000;
+}
+
+nav h2 {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #818cf8;
+}
+
+/* Sections Full Screen */
+section {
+    min-height: 100vh;
+    padding: 120px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+/* Section Titles */
+h2 {
+    margin-bottom: 25px;
+    border-left: 4px solid #6366f1;
+    padding-left: 12px;
+    font-size: 28px;
+}
+
+/* About */
+#about p {
+    max-width: 700px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+/* Skills */
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin: 10px;
+    padding: 12px 25px;
+    border: 1px solid #1f2937;
+    border-radius: 25px;
+    font-size: 14px;
+    background: rgba(255,255,255,0.02);
+    transition: 0.3s;
+}
+
+.box:hover {
+    background: rgba(99,102,241,0.1);
+    transform: scale(1.05);
+}
+
+/* Projects */
+.card {
+    border: 1px solid #1f2937;
+    padding: 20px;
+    margin: 12px 0;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.02);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(99,102,241,0.08);
+}
+
+.card a {
+    text-decoration: none;
+    color: #e6edf3;
+    font-size: 16px;
+}
+
+.card small {
+    color: #94a3b8;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 10px 0;
+    color: #cbd5e1;
+}
+
+#contact a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#contact a:hover {
+    color: #ffffff;
+}
+
+/* Fade Animation */
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
